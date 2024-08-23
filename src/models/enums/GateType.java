@@ -1,5 +1,5 @@
 package models.enums;
 
 public enum GateType {
-    ENTRY,EXIT;
+    ENTRY,EXIT,UNDER_MAINTAINACE
 }
