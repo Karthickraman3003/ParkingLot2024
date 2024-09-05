@@ -8,7 +8,7 @@ import services.strategy.SlotAllocationStrategy;
 import java.awt.*;
 import java.util.List;
 
-public class ParkingLot extends BaseModel{
+public class  ParkingLot extends BaseModel{
 
     private String address;
     private String name;
@@ -20,6 +20,10 @@ public class ParkingLot extends BaseModel{
     private BillCalculationStrategy billCalculationStrategy;
     private SlotAllocationStrategy slotAllocationStrategy;
 
+    public ParkingLot()
+    {
+
+    }
     public ParkingLot(String address, String name, List<ParkingFloor> floors, ParkingLotStatus parkingLotStatus, List<VehicleType> vehicleTypeSupported, int capacity, BillCalculationStrategy billCalculationStrategy, SlotAllocationStrategy slotAllocationStrategy) {
         this.address = address;
         this.name = name;

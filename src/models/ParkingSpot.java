@@ -1,5 +1,6 @@
 package models;
 
+import models.enums.ParkingFloorStatus;
 import models.enums.ParkingSpotStatus;
 import models.enums.VehicleType;
 
@@ -10,7 +11,10 @@ public class ParkingSpot extends BaseModel{
     private int number;
     private ParkingSpotStatus parkingSpotStatus;
 
+    public ParkingSpot()
+    {
 
+    }
     public ParkingSpot(VehicleType vehicleType, Vehicle vehicle, int number, ParkingSpotStatus parkingSpotStatus)
     {
         this.vehicleType=vehicleType;
@@ -41,6 +45,11 @@ public class ParkingSpot extends BaseModel{
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public void setParkingSpotStatus(ParkingSpotStatus parkingSpotStatus)
+    {
+        this.parkingSpotStatus=parkingSpotStatus;
     }
 
     public ParkingSpotStatus getParkingSpotStatus() {

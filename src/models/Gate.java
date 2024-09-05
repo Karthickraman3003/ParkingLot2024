@@ -33,11 +33,18 @@ public class Gate extends BaseModel{
         return gateType;
     }
 
+    public void setGateType(GateType gateType)
+    {
+        this.gateType=gateType;
+    }
 
     public GateStatus getGateStatus() {
         return gateStatus;
     }
-
+    public void setGateStatus(GateStatus gateStatus)
+    {
+        this.gateStatus=gateStatus;
+    }
 
     public String getGateOperator() {
         return gateOperator;
